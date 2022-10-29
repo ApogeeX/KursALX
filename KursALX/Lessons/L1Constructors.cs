@@ -11,13 +11,16 @@ namespace KursALX.Lessons
             spider.Species = "Black Widow";
             spider.IsVenomous = true;
             spider.Sex = "Male";
+            spider.Present();
 
             var redSpider = new Spider("Red", "Tarantula", false, "Female");
+            redSpider.Present();
 
             var blueSpider = new Spider("Blue", "Golliath");
+            blueSpider.Present();
 
             var yellowSpider = new Spider("Yellow", false);
-
+            yellowSpider.Present();
         }
     }
 }
