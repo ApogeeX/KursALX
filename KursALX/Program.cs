@@ -11,5 +11,5 @@ using KursALX.Lessons;
 //L1Strings.Test();
 //L1Strings.ConcatinationTest();
 //L1Constructors.Test();
-//AssigmentsDemo.Run();
+AssigmentsDemo.Run();
 
