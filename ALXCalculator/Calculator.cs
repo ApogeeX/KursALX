@@ -9,7 +9,7 @@ namespace ALXCalculator
             Console.WriteLine("Running caluculator...");
             Console.Write("X number: ");
             var x = Double.Parse(Console.ReadLine());
-            Console.Write("Choose + - * /: ");
+            Console.Write("Choose + - * / ");
             var operationCharacterInfo = Console.ReadKey();
             Console.WriteLine("");
             Console.Write("Y number: ");
