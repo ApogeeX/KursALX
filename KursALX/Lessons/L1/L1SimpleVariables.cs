@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KursALX.Lessons
+namespace KursALX.Lessons.L1
 {
     public class L1SimpleVariables
     {
@@ -13,7 +13,7 @@ namespace KursALX.Lessons
             bool whySoSerious = false;
             int x = 12;
             double y = 1.22;
-            
+
             float z = 1.22f;
             char c = 'g';
 

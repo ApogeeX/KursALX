@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using KursALX.Lessons.Classes;
+using KursALX.Lessons.L1.Classes;
 
-namespace KursALX.Lessons
+namespace KursALX.Lessons.L1
 {
     public class L1ObjectVariables
     {

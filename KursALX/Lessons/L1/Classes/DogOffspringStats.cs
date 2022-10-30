@@ -1,4 +1,4 @@
-﻿namespace KursALX.Lessons.Classes
+﻿namespace KursALX.Lessons.L1.Classes
 {
     public class DogOffspringStats
     {
