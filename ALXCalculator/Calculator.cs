@@ -11,12 +11,34 @@ namespace ALXCalculator
             var x = Double.Parse(Console.ReadLine());
             Console.Write("Y number: ");
             var y = Double.Parse(Console.ReadLine());
-            Console.WriteLine($"{x} + {y} = {Add(x,y)}");
-            Console.WriteLine($"{x} * {y} = {Multiply(x,y)}");
-            Console.WriteLine($"{x} - {y} = {Substract(x,y)}");
-            Console.WriteLine($"{x} / {y} = {Divide(x,y)}");
+            Console.Write("Choose + - * /: ");
+            var operationCharacterInfo = Console.ReadKey();
+            Console.Write();
+
+            PerformOperation(operationCharacterInfo.KeyChar,x,y);
         }
 
+        private void PerformOperation(char operationChar, double x, double y)
+        {
+            switch (operationChar)
+            {
+                case '+':
+                    Console.WriteLine($"{x} + {y} = {Add(x, y)}");
+                    break;
+                case '*':
+                    Console.WriteLine($"{x} * {y} = {Multiply(x, y)}");
+                    break;
+                case '-':
+                    Console.WriteLine($"{x} - {y} = {Substract(x, y)}");
+                    break;
+                case '/':
+                    Console.WriteLine($"{x} / {y} = {Divide(x, y)}");
+                    break;
+                default:
+                    Console.WriteLine("Invalid operation...");
+                    break;
+            }
+        }
         private double Add(double x, double y)
         {
             return x + y;
