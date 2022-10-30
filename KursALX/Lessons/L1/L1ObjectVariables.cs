@@ -5,7 +5,7 @@ namespace KursALX.Lessons.L1
 {
     public class L1ObjectVariables
     {
-        public static void Test1()
+        public static void Run1()
         {
             Console.WriteLine("Variables");
             Dog dog = new Dog();
@@ -20,7 +20,7 @@ namespace KursALX.Lessons.L1
             Dog dogAzor = new Dog();
         }
 
-        public static void Test2()
+        public static void Run2()
         {
             Dog maltanieseDog = new Dog();
             maltanieseDog.Race = "West";

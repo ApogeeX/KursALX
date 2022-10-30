@@ -8,7 +8,7 @@ namespace KursALX.Lessons.L1
 {
     public class L1SimpleVariables
     {
-        public static void Test()
+        public static void Run()
         {
             bool whySoSerious = false;
             int x = 12;

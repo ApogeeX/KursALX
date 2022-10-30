@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Lessons\L2\" />
+    <Folder Include="Lessons\L2\Classes\" />
   </ItemGroup>
 
 </Project>
