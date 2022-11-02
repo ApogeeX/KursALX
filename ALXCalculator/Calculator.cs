@@ -7,12 +7,12 @@ namespace ALXCalculator
         public void Run()
         {
             Console.WriteLine("Running caluculator...");
-            Console.Write("X number: ");
+            Console.Write("First number: ");
             var x = Double.Parse(Console.ReadLine());
-            Console.Write("Choose + - * / ");
+            Console.Write("Choose + - * / ^: ");
             var operationCharacterInfo = Console.ReadKey();
             Console.WriteLine("");
-            Console.Write("Y number: ");
+            Console.Write("Second number: ");
             var y = Double.Parse(Console.ReadLine());
             
 
@@ -35,6 +35,9 @@ namespace ALXCalculator
                 case '/':
                     Console.WriteLine($"{x} / {y} = {Divide(x, y)}");
                     break;
+                case '^':
+                    Console.WriteLine($"{x}^{y} = {Power(x, y)}");
+                    break;
                 default:
                     Console.WriteLine("Invalid operation...");
                     break;
@@ -56,6 +59,10 @@ namespace ALXCalculator
         public double Divide(double x, double y)
         {
             return x / y;
+        }
+        public double Power(double x, double y)
+        {
+            return Math.Pow(x,y);
         }
     }
 }
