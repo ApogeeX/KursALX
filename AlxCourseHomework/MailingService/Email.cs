@@ -6,11 +6,7 @@
         public string ToAddress;
         public string Subject;
         public string Message;
-
-        public Email()
-        {
-
-        }
+                
         public Email(string fromAddress, string toAddress, string subject, string message)
         {
             FromAddress = fromAddress;
