@@ -15,11 +15,11 @@ namespace AlxCourseHomework
             var email4 = new Email("email.address4@gmail.com", "email.address4@yahoo.com", "Temat 4", "Treść wiadomości 4");
             var email5 = new Email("email.address5@gmail.com", "email.address5@yahoo.com", "Temat 5", "Treść wiadomości 5");
 
-            EmailService.SendEmail(email1.FromAddress, email1.ToAddress, email1.Subject, email1.Message);
-            EmailService.SendEmail(email2.FromAddress, email2.ToAddress, email2.Subject, email2.Message);
-            EmailService.SendEmail(email3.FromAddress, email3.ToAddress, email3.Subject, email3.Message);
-            EmailService.SendEmail(email4.FromAddress, email4.ToAddress, email4.Subject, email4.Message);
-            EmailService.SendEmail(email5.FromAddress, email5.ToAddress, email5.Subject, email5.Message);
+            EmailService.SendEmail(email1);
+            EmailService.SendEmail(email2);
+            EmailService.SendEmail(email3);
+            EmailService.SendEmail(email4);
+            EmailService.SendEmail(email5);
         }
     }
 }
