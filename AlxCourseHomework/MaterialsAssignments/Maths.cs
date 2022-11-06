@@ -89,8 +89,10 @@
             Console.WriteLine($"Check if all above is true? - {check9}");
             if (check9 == true)
             {
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("* The complement of the union of two sets is the same as the intersection of their complements");
                 Console.WriteLine("* The complement of the intersection of two sets is the same as the union of their complements");
+                Console.ResetColor();
             }
             else { Console.WriteLine("Not going to happen!"); }
             Console.WriteLine($"--------------------------- End of de Morgan ---------------------------");
