@@ -11,6 +11,7 @@
             Console.WriteLine($"Subject: {subject}");
             Console.WriteLine($"Message: {message}");
             Console.WriteLine("-------------------------------");
+            Console.WriteLine("");
         }
     }
 }
