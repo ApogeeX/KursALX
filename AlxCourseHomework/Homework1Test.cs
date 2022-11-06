@@ -20,16 +20,6 @@ namespace AlxCourseHomework
             EmailService.SendEmail(email3.FromAddress, email3.ToAddress, email3.Subject, email3.Message);
             EmailService.SendEmail(email4.FromAddress, email4.ToAddress, email4.Subject, email4.Message);
             EmailService.SendEmail(email5.FromAddress, email5.ToAddress, email5.Subject, email5.Message);
-
-            var personalData1 = new PersonalData("Emil", "Pałczyński", 42, 1.86, "male", 80110600000);
-
-            PersonalData.Present(personalData1.Name, personalData1.Surname, personalData1.Age, personalData1.Height, personalData1.Sex, personalData1.Pesel);
-
-            var today = new Today((int)DateTime.Now.DayOfWeek, (int)DateTime.Now.Month, (int)DateTime.Now.Year);
-
-            Today.Present(today.Day, today.Month, today.Year);
-
-            
         }
     }
 }
