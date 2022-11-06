@@ -24,6 +24,7 @@ namespace AlxCourseHomework.MaterialsAssignments
             Console.WriteLine($"Month: {monthName}");
             Console.WriteLine($"Year: {year}");
             Console.WriteLine($"---------------- END ----------------");
+            Console.WriteLine("");
         }
     }
 }
