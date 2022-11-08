@@ -1,7 +1,4 @@
 ﻿using AlxCourseHomework.MailingService;
-using AlxCourseHomework.MaterialsAssignments;
-using AlxCourseHomework.MaterialsAssignments.Enums;
-using System.Drawing;
 
 namespace AlxCourseHomework
 {

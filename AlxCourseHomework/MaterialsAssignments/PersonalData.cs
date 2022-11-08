@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace AlxCourseHomework.MaterialsAssignments
+﻿namespace AlxCourseHomework.MaterialsAssignments
 {
     public class PersonalData
     {
