@@ -20,7 +20,7 @@ namespace AlxCourseHomework.MaterialsAssignments
             Days dayName = (Days)day;
             Months monthName = (Months)month;
             Console.WriteLine($"------ Day and Month from Enums ------");
-            Console.WriteLine($"Today is: {dayName}");
+            Console.WriteLine($"Today is: {dayName} {DateTime.Now.Day}");
             Console.WriteLine($"Month: {monthName}");
             Console.WriteLine($"Year: {year}");
             Console.WriteLine($"---------------- END ----------------");
