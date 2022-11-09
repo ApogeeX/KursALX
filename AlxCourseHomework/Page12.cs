@@ -6,7 +6,7 @@ namespace AlxCourseHomework
     {
         public static void Run()
         {
-            var personalData1 = new PersonalData("Emil", "Pałczyński", 42, 1.86, "male", 80110600000);
+            var personalData1 = new PersonalData("Kamil", "Połczyński", 42, 1.86, "male", 77110600000);
             
             PersonalData.Present(personalData1.Name, personalData1.Surname, personalData1.Age, personalData1.Height, personalData1.Sex, personalData1.Pesel);
 
