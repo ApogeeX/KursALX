@@ -20,47 +20,41 @@ namespace KursALX.Assigments.M2
             var employee8 = new Employee("Karolina", 8000, 13);
             var employee9 = new Employee("Urszula", 10000, 8);
 
-            var seniorityServiceBySalary = new SeniorityService();
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee1);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee2);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee3);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee4);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee5);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee6);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee7);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee8);
-            seniorityServiceBySalary.ClassifySeniorityBySalary(employee9);
+            var seniorityService = new SeniorityService();
+            seniorityService.ClassifySeniorityBySalary(employee1);
+            seniorityService.ClassifySeniorityBySalary(employee2);
+            seniorityService.ClassifySeniorityBySalary(employee3);
+            seniorityService.ClassifySeniorityBySalary(employee4);
+            seniorityService.ClassifySeniorityBySalary(employee5);
+            seniorityService.ClassifySeniorityBySalary(employee6);
+            seniorityService.ClassifySeniorityBySalary(employee7);
+            seniorityService.ClassifySeniorityBySalary(employee8);
+            seniorityService.ClassifySeniorityBySalary(employee9);
+            Console.WriteLine("Juniors by salary: ");
+            PresentEmployees(seniorityService.JuniorEmployees);
+            Console.WriteLine("Mids by salary: ");
+            PresentEmployees(seniorityService.MidEmployees);
+            Console.WriteLine("Seniors by salary: ");
+            PresentEmployees(seniorityService.SeniorEmployees);
+            Console.WriteLine("");
+            seniorityService.ClearLists();
 
-            var seniorityServiceByExperience = new SeniorityService();
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee1);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee2);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee3);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee4);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee5);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee6);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee7);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee8);
-            seniorityServiceByExperience.ClassifySeniorityByExperience(employee9);
+            seniorityService.ClassifySeniorityByExperience(employee1);
+            seniorityService.ClassifySeniorityByExperience(employee2);
+            seniorityService.ClassifySeniorityByExperience(employee3);
+            seniorityService.ClassifySeniorityByExperience(employee4);
+            seniorityService.ClassifySeniorityByExperience(employee5);
+            seniorityService.ClassifySeniorityByExperience(employee6);
+            seniorityService.ClassifySeniorityByExperience(employee7);
+            seniorityService.ClassifySeniorityByExperience(employee8);
+            seniorityService.ClassifySeniorityByExperience(employee9);
             
             Console.WriteLine("Juniors by experience: ");
-            PresentEmployees(seniorityServiceByExperience.JuniorEmployees);
-
+            PresentEmployees(seniorityService.JuniorEmployees);
             Console.WriteLine("Mids by experience: ");
-            PresentEmployees(seniorityServiceByExperience.MidEmployees);
-
+            PresentEmployees(seniorityService.MidEmployees);
             Console.WriteLine("Seniors by experience: ");
-            PresentEmployees(seniorityServiceByExperience.SeniorEmployees);
-
-            Console.WriteLine("");
-
-            Console.WriteLine("Juniors by salary: ");
-            PresentEmployees(seniorityServiceBySalary.JuniorEmployees);
-
-            Console.WriteLine("Mids by salary: ");
-            PresentEmployees(seniorityServiceBySalary.MidEmployees);
-
-            Console.WriteLine("Seniors by salary: ");
-            PresentEmployees(seniorityServiceBySalary.SeniorEmployees);
+            PresentEmployees(seniorityService.SeniorEmployees);
         }
 
         public static void PresentEmployees(List<Employee> employees)

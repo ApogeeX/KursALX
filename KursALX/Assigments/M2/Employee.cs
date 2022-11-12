@@ -20,6 +20,4 @@ namespace KursALX.Assigments.M2
             Experience = experience;
         }
     }
-
-
 }

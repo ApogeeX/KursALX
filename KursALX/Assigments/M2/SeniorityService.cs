@@ -50,5 +50,12 @@ namespace KursALX.Assigments.M2
                 MidEmployees.Add(employee);
             }
         }
+
+        public void ClearLists()
+        {
+            JuniorEmployees.Clear();
+            MidEmployees.Clear();
+            SeniorEmployees.Clear();
+        }
     }
 }
