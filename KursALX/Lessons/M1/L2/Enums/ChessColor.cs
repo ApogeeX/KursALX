@@ -1,4 +1,4 @@
-﻿namespace KursALX.Lessons.L2.Enums
+﻿namespace KursALX.Lessons.M1.L2.Enums
 {
     public enum ChessColor
     {

@@ -1,4 +1,4 @@
-﻿namespace KursALX.Lessons.L2
+﻿namespace KursALX.Lessons.M1.L2
 {
     public class L2Conditionals
     {

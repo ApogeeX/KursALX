@@ -1,13 +1,17 @@
 ﻿using KursALX.Assigments;
 using KursALX.Assigments.M2;
 using KursALX.Lessons;
-using KursALX.Lessons.L1;
-using KursALX.Lessons.L2;
+using KursALX.Lessons.M1.L1;
+using KursALX.Lessons.M1.L2;
+using KursALX.Lessons.M2.L1;
 
 //Console.Write("Emil Pałczyński\n");
 Console.WriteLine("KursALX");
 Console.WriteLine("----------------------------");
-SeniorityServiceTest.Run();
+//L1Lists.Run();
+//L1Arrays.Run1();
+//L1Arrays.Run();
+//SeniorityServiceTest.Run();
 //Console.WriteLine("Lekcja 1");
 //L1ObjectVariables.Run2();
 //L1ObjectVariables l1variables = new L1ObjectVariables();

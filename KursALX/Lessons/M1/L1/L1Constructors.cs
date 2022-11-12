@@ -1,6 +1,6 @@
-﻿using KursALX.Lessons.L1.Classes;
+﻿using KursALX.Lessons.M1.L1.Classes;
 
-namespace KursALX.Lessons.L1
+namespace KursALX.Lessons.M1.L1
 {
     public class L1Constructors
     {

@@ -1,12 +1,6 @@
-﻿using KursALX.Lessons.L2.Enums;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using KursALX.Lessons.M1.L2.Enums;
 
-namespace KursALX.Lessons.L2
+namespace KursALX.Lessons.M1.L2
 {
     public class L2EnumsAndSwitch
     {
