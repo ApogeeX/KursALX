@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KursALX.Assigments.M2
+﻿namespace KursALX.Assigments.M2
 {
     public static class SeniorityServiceTest
     {
@@ -37,6 +31,7 @@ namespace KursALX.Assigments.M2
             Console.WriteLine("Seniors by salary: ");
             PresentEmployees(seniorityService.SeniorEmployees);
             Console.WriteLine("");
+
             seniorityService.ClearLists();
 
             seniorityService.ClassifySeniorityByExperience(employee1);
@@ -48,7 +43,6 @@ namespace KursALX.Assigments.M2
             seniorityService.ClassifySeniorityByExperience(employee7);
             seniorityService.ClassifySeniorityByExperience(employee8);
             seniorityService.ClassifySeniorityByExperience(employee9);
-            
             Console.WriteLine("Juniors by experience: ");
             PresentEmployees(seniorityService.JuniorEmployees);
             Console.WriteLine("Mids by experience: ");
