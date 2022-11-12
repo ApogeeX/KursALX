@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using KursALX.Lessons.M1.L1.Classes;
+﻿using KursALX.Lessons.M1.L1.Classes;
 
 namespace KursALX.Lessons.M2.L1
 {
