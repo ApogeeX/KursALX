@@ -8,8 +8,9 @@ using KursALX.Lessons.M2.L1;
 //Console.Write("Emil Pałczyński\n");
 Console.WriteLine("KursALX");
 Console.WriteLine("----------------------------");
-L1Loops.RunWhile2();
 
+//L1Arrays.Run2();
+//L1Loops.RunWhile2();
 //L1Loops.RunDowhile();
 //L1Loops.RunWhile();
 //L1Loops.RunFor();

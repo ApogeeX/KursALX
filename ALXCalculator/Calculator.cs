@@ -21,11 +21,13 @@ namespace ALXCalculator
         public void RunOnArray()
         {
             Console.WriteLine("Running caluculator...");
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("Choose + - * / ^: ");
             var operationCharacterInfo = Console.ReadKey();
 
             while (ValidOperationOnArray(operationCharacterInfo.KeyChar))
             {
+                Console.ResetColor();
                 Console.WriteLine();
                 Console.Write("First number: ");
                 var x = Double.Parse(Console.ReadLine());
@@ -33,9 +35,11 @@ namespace ALXCalculator
                 var y = Double.Parse(Console.ReadLine());
                 PerformOperation(operationCharacterInfo.KeyChar, x, y);
                 Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("Choose + - * / ^: ");
                 operationCharacterInfo = Console.ReadKey();
             }
+            Console.ResetColor();
             Console.WriteLine("");
             Console.WriteLine("WRONG!!! Closing calculator");
         }
