@@ -3,6 +3,7 @@
 Console.WriteLine("-- ALX CALCULATOR --");
 
 var calculator = new Calculator();
-calculator.Run();
+//calculator.RunOnList();
+calculator.RunOnArray();
 
 Console.WriteLine("--------------------");
