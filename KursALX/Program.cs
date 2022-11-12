@@ -1,4 +1,5 @@
 ﻿using KursALX.Assigments;
+using KursALX.Assigments.M2;
 using KursALX.Lessons;
 using KursALX.Lessons.L1;
 using KursALX.Lessons.L2;
@@ -6,6 +7,7 @@ using KursALX.Lessons.L2;
 //Console.Write("Emil Pałczyński\n");
 Console.WriteLine("KursALX");
 Console.WriteLine("----------------------------");
+SeniorityServiceTest.Run();
 //Console.WriteLine("Lekcja 1");
 //L1ObjectVariables.Run2();
 //L1ObjectVariables l1variables = new L1ObjectVariables();

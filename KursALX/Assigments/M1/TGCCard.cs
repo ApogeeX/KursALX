@@ -1,4 +1,4 @@
-﻿namespace KursALX.Assigments
+﻿namespace KursALX.Assigments.M1
 {
     internal class TGCCard
     {

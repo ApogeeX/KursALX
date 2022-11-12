@@ -17,7 +17,6 @@
             Species = species;
             IsVenomous = true;
             Sex = "male";
-
         }
 
         public Spider(string color, bool isVenomous)

@@ -1,7 +1,7 @@
 ﻿using KursALX.Assigments.Classes;
 using System.Xml.Linq;
 
-namespace KursALX.Assigments
+namespace KursALX.Assigments.M1
 {
     public class AssigmentsDemo
     {
@@ -19,7 +19,7 @@ namespace KursALX.Assigments
             var tcgCard1 = new TCGCard("Pokemon", true, 315, "Charmadon");
 
             var tcgCard2 = new TCGCard(600);
-            tcgCard2.GameTitle = "MTG";     
+            tcgCard2.GameTitle = "MTG";
 
             tcgCard1.Present();
             tcgCard1.Play();

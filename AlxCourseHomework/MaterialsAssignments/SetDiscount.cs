@@ -54,6 +54,7 @@
                     Console.ForegroundColor = ConsoleColor.Green;
                     discount = 5;
                     Console.WriteLine($"Discount set to {discount}%.");
+                    Console.ResetColor();
                     break;
             }
             return discount;
