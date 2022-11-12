@@ -58,7 +58,16 @@ namespace ALXCalculator
         }
         public double Divide(double x, double y)
         {
-            return x / y;
+            try
+            {
+                return x / y;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
         public double Power(double x, double y)
         {
