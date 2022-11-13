@@ -8,6 +8,7 @@ namespace KursALX.Lessons.M2.L2.Classes.Inheritance
         {
             Type = ChessFigureType.PAWN;
         }
+
         public void Move()
         {
             Console.WriteLine("The Pawn is moving...");
