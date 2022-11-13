@@ -2,7 +2,7 @@
 
 namespace KursALX.Lessons.M2.L2.Classes.Inheritance
 {
-    public class ChessPiece
+    public abstract class ChessPiece
     {
         public ChessColor? Color { get; set; }
         public ChessFigureType? Type { get; set; }
