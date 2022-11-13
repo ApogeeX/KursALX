@@ -1,4 +1,4 @@
-﻿namespace KursALX.Assigments.M2.L2
+﻿namespace KursALX.Assigments.M2.L2 
 {
     public class BookStorageApp
     {
@@ -8,34 +8,34 @@
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Please choose action: \na - Add book \ns - Show Shelves \nq - Quit");
+                Console.WriteLine("Please choose action: \nA - Add book \nS - Show Shelves \nQ - Quit");
                 Console.Write("Action: ");
-                var choice = Console.ReadKey();
-                switch (choice.KeyChar)
+                var choice = Console.ReadKey().KeyChar;
+                switch (choice.ToString().ToLower())
                 {
-                    case 'a':
+                    case "a":
                         while (true)
                         {
                             var book = bookStorageService.AddBook();
                             bookStorageService.StoreOnShelf(book);
-                            Console.Write("Do you wish to add another book? (y/n): ");
-                            var yesNo = Console.ReadKey();
-                            if (yesNo.KeyChar == 'n')
+                            Console.Write("Do you wish to add another book? (Y/N): ");
+                            var yesNo = Console.ReadKey().KeyChar;
+                            if (yesNo.ToString().ToLower() == "n")
                             {
                                 break;
                             }
                         }
                         break;
-                    case 's':
+                    case "s":
                         bookStorageService.ShowShelves();
                         break;
-                    case 'q':
+                    case "q":
                         break;
                 }
                 Console.WriteLine();
-                Console.Write("Return to main menu (m) or quit (q): ");
-                var menuOrQuit = Console.ReadKey();
-                if (menuOrQuit.KeyChar == 'q')
+                Console.Write("Return to Main menu (M) or Quit (Q): ");
+                var menuOrQuit = Console.ReadKey().KeyChar;
+                if (menuOrQuit.ToString().ToLower() == "q")
                 {
                     break;
                 }

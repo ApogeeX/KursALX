@@ -2,10 +2,10 @@
 {
     public enum Genre
     {
-        SYFY = 1,
-        ACTION,
-        FANTASY,
-        KIDS,
-        COOKING
+        Syfy = 1,   // Wystarcy jedna liczba, reszta będzie po koleii.
+        Action,
+        Fantasy,
+        Kids,
+        Cooking,
     }
 }

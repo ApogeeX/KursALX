@@ -83,19 +83,19 @@ namespace KursALX.Assigments.M2.L2
         {
             switch (book.Genre)
             {
-                case Genre.SYFY:
+                case Genre.Syfy:
                     Syfy.Add(book);
                     break;
-                case Genre.ACTION:
+                case Genre.Action:
                     Action.Add(book);
                     break;
-                case Genre.FANTASY:
+                case Genre.Fantasy:
                     Fantasy.Add(book);
                     break;
-                case Genre.KIDS:
+                case Genre.Kids:
                     Kids.Add(book);
                     break;
-                case Genre.COOKING:
+                case Genre.Cooking:
                     Cooking.Add(book);
                     break;
             }
