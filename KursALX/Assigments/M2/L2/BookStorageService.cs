@@ -22,19 +22,19 @@ namespace KursALX.Assigments.M2.L2
         {
             Console.Clear();
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("SciFi Books:\n");
+            Console.WriteLine("Syfy Books:\n");
             Present(Syfy);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Fantasy Books:\n");
+            Console.WriteLine("Action Books:\n");
             Present(Action);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Horror Books:\n");
+            Console.WriteLine("Fantasy Books:\n");
             Present(Fantasy);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Criminal Books:\n");
+            Console.WriteLine("Kids Books:\n");
             Present(Kids);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Western Books:\n");
+            Console.WriteLine("Cooking Books:\n");
             Present(Cooking);
         }
 
