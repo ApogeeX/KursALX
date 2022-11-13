@@ -11,4 +11,8 @@
     <Folder Include="Lessons\M1\L2\Classes\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CommonFunctionalities\CommonFunctionalities.csproj" />
+  </ItemGroup>
+
 </Project>

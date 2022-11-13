@@ -1,4 +1,4 @@
-﻿namespace KursALX.Assigments.M2
+﻿namespace KursALX.Assigments.M2.L1
 {
     public static class SeniorityServiceTest
     {
@@ -53,7 +53,7 @@
 
         public static void PresentEmployees(List<Employee> employees)
         {
-            foreach(var employee in employees)
+            foreach (var employee in employees)
             {
                 Console.WriteLine($"Employee: {employee.Name}");
             }

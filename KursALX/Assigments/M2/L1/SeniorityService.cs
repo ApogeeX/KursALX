@@ -1,4 +1,4 @@
-﻿namespace KursALX.Assigments.M2
+﻿namespace KursALX.Assigments.M2.L1
 {
     public class SeniorityService
     {
@@ -19,7 +19,7 @@
             {
                 JuniorEmployees.Add(employee);
             }
-            else if(employee.Salary > 10000)
+            else if (employee.Salary > 10000)
             {
                 SeniorEmployees.Add(employee);
             }

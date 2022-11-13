@@ -1,4 +1,4 @@
-﻿namespace KursALX.Assigments.M2
+﻿namespace KursALX.Assigments.M2.L1
 {
     public class Employee
     {
