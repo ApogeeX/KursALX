@@ -1,9 +1,9 @@
 ﻿using ALXCalculator;
+using ALXCalculator.Interfaces;
 
 Console.WriteLine("-- ALX CALCULATOR --");
 
-var calculator = new Calculator();
+ICalculator calculator = new Calculator();
 //calculator.RunOnList();
 calculator.RunOnArray();
-
 Console.WriteLine("--------------------");

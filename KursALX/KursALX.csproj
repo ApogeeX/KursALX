@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Lessons\M1\L2\Classes\" />
+    <Folder Include="Lessons\M2\L2\Abstract\" />
   </ItemGroup>
 
   <ItemGroup>

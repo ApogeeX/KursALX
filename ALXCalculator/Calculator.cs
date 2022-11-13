@@ -1,6 +1,8 @@
-﻿namespace ALXCalculator
+﻿using ALXCalculator.Interfaces;
+
+namespace ALXCalculator
 {
-    public class Calculator
+    public class Calculator : ICalculator
     {
         List<char> ValidChars;
         char[] ValidOperatorArray = { '+', '-', '*', '/', '^' };
@@ -41,7 +43,7 @@
             Console.WriteLine("WRONG!!! Closing calculator");
         }
 
-        public void RunOnList()
+        /* public void RunOnList()
         {
             Console.WriteLine("Running caluculator...");
             Console.Write("Choose + - * / ^: ");
@@ -61,7 +63,7 @@
             }
             Console.WriteLine("");
             Console.WriteLine("WRONG!!! Closing calculator");
-        }
+        } */
 
         private bool ValidOperationOnList(char operationCaracter)
         {

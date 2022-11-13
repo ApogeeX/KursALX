@@ -1,6 +1,8 @@
-﻿namespace CommonFunctionalities.Services;
+﻿using CommonFunctionalities.Interfaces;
 
-public class TaxService
+namespace CommonFunctionalities.Services;
+
+public class TaxService : ITaxService
 {
     private const double VatPercentage = 0.23;
     private const double GovernmentPercentage = 0.17;

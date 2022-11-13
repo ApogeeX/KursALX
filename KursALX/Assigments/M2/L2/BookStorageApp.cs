@@ -4,23 +4,19 @@
     {
         public static void Run()
         {
-            var bookStorageService = new BookStorageService();
-            char question='y';
-            do
+            BookStorageService bookStorageService = new BookStorageService();
+            while (true)
             {
-                var book = new Book();
+                var book = bookStorageService.CreateBook();
+                bookStorageService.StoreOnShelf(book);
+                bookStorageService.Run();
+                Console.Write("Do you want to continue (Yes/No):");
+                string doYouWant = Console.ReadLine().ToLower();
+                if (doYouWant == "no")
+                {
+                    break;
+                }
             }
-            while(question=='y');
-        }
-
-        public static void PresentShelve(List<string> list)
-        {
-            Console.WriteLine($"Number of elements: {list.Count}");
-            foreach (string item in list)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine();
         }
     }
 }
