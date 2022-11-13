@@ -7,12 +7,35 @@
             BookStorageService bookStorageService = new BookStorageService();
             while (true)
             {
-                var book = bookStorageService.CreateBook();
-                bookStorageService.StoreOnShelf(book);
-                bookStorageService.Run();
-                Console.Write("Do you want to continue (Yes/No):");
-                string doYouWant = Console.ReadLine().ToLower();
-                if (doYouWant == "no")
+                Console.Clear();
+                Console.WriteLine("Please choose action: \na - Add book \ns - Show Shelves \nq - Quit");
+                Console.Write("Action: ");
+                var choice = Console.ReadKey();
+                switch (choice.KeyChar)
+                {
+                    case 'a':
+                        while (true)
+                        {
+                            var book = bookStorageService.AddBook();
+                            bookStorageService.StoreOnShelf(book);
+                            Console.Write("Do you wish to add another book? (y/n): ");
+                            var yesNo = Console.ReadKey();
+                            if (yesNo.KeyChar == 'n')
+                            {
+                                break;
+                            }
+                        }
+                        break;
+                    case 's':
+                        bookStorageService.ShowShelves();
+                        break;
+                    case 'q':
+                        break;
+                }
+                Console.WriteLine();
+                Console.Write("Return to main menu (m) or quit (q): ");
+                var menuOrQuit = Console.ReadKey();
+                if (menuOrQuit.KeyChar == 'q')
                 {
                     break;
                 }

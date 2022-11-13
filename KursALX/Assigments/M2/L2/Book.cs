@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace KursALX.Assigments.M2.L2
+﻿namespace KursALX.Assigments.M2.L2
 {
     public class Book
     {

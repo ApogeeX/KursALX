@@ -26,4 +26,4 @@ BookStorageApp.Run();
 //AssigmentsDemo.Run();
 //L2Conditionals.Run();
 //L2EnumsAndSwitch.Run();
-Console.WriteLine("----------------------------");
+Console.WriteLine("\n----------------------------");
