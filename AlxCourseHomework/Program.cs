@@ -1,6 +1,8 @@
 ﻿using AlxCourseHomework;
 
-Page23.ArrayChange();
+//Page25.ListRun();
+//Page25.EnumRun();
+//Page23.ArrayChange();
 //Page23.Array3On3();
 //Page23.ArraySearch();
 //Dividers.Run();
