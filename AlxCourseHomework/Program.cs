@@ -1,7 +1,8 @@
 ﻿using AlxCourseHomework;
-using AlxCourseHomework.MaterialsAssignments;
 
-Dividers.Run();
+Page23.Run();
+//Page23.ArraySearch();
+//Dividers.Run();
 //Page21.Run();
 // Homework1Test.Run();
 // Page12.Run();
