@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Globalization;
 
 namespace AlxCourseHomework
 {
@@ -40,9 +40,53 @@ namespace AlxCourseHomework
             Console.ReadKey();
         }
 
-        public static void Run()
+        public static void Array3On3()
         {
+            int[,] ints = new int[3,3];
+            int number = 1;
 
+            for (int x = 0; x < 3; x++)
+            {
+                for (int y = 0; y < 3; y++)
+                {
+                    ints[x,y] = number++;
+                }
+            }
+
+            for (int x = 0; x < 3; x++)
+            {
+                Console.WriteLine($"{ints[x, 0]} {ints[x, 1]} {ints[x, 2]}");     
+            }
+        }
+
+        public static void ArrayChange()
+        {
+            int[] numbersToChange = new int[5];
+            for (int x = 0; x < 5; x++)
+            {
+                Console.Write($"Please enter number {x+1} of 5: ");
+                try
+                {
+                    numbersToChange[x] = Int32.Parse(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("That was not a valid number, zero entered as default.");
+                    numbersToChange[x] = 0;
+                }
+                Console.WriteLine();
+            }
+
+            for(int x = 0; x < 5; x++)
+            {
+                numbersToChange[x] = numbersToChange[x] * 2;
+            }
+
+            Console.Write("Array after '*2': ");
+            foreach (int i in numbersToChange)
+            {
+                Console.Write($"{i} ");
+            }
         }
     }
 }
