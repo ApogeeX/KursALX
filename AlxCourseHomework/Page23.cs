@@ -6,8 +6,8 @@ namespace AlxCourseHomework
     {
         public static void ArraySearch()
         {
-            string[] products = new string[4] { "CHLEB", "MASŁO", "KETCHUP", "SOK" };
-            double[] bruttoPrices = new double[4] { 3.75, 6.99, 5.50, 3.75 };
+            string[] products = new string[7] { "CHLEB", "MASŁO", "KETCHUP", "SOK", "JAJKA", "SZPINAK", "LODY" };
+            double[] bruttoPrices = new double[7] { 15.23, 64.00, 45.50, 105.55, 14.23, 1421.89, 7899.99 };
             int isOk = 1;
 
             do
