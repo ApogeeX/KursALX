@@ -19,8 +19,8 @@ namespace ShootingRange
             }
             Console.Write("Want to create new shooting order? (Y/N) ");
             var addNextGun = Console.ReadKey().KeyChar;
-            
-            
+
+
             while (addNextGun.ToString().ToLower() == "y")
             {
                 Console.Write("Choose Firearms to shoot: ");
@@ -69,8 +69,8 @@ namespace ShootingRange
                     Console.WriteLine($"Gun: {ListOfUsedFirearms[i]} Number of Shots: {ShotsPerFirearm[i]} Price netto: {PricePerFirearmShot[i]}");
                 }
                 Console.WriteLine("Summary netto:       \t" + SummingCost().ToString());
-                Console.WriteLine("TAX 23%:             \t" + Math.Round((SummingCost() * 0.23), 2).ToString());
-                Console.WriteLine("To pay (VAT included)\t" + Math.Round((SummingCost() * 1.23), 2).ToString());
+                Console.WriteLine("TAX 23%:             \t" + Math.Round(SummingCost() * 0.23, 2).ToString());
+                Console.WriteLine("To pay (VAT included)\t" + Math.Round(SummingCost() * 1.23, 2).ToString());
             }
             int SummingCost()
             {
