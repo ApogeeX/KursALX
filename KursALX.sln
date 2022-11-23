@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALXCalculator", "ALXCalcula
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlxCourseHomework", "AlxCourseHomework\AlxCourseHomework.csproj", "{EA4A4173-64EA-49DA-A1E4-2E3E9BE65E0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFunctionalities", "CommonFunctionalities\CommonFunctionalities.csproj", "{BF46D7B1-C548-48AE-9988-2EF19317C633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonFunctionalities", "CommonFunctionalities\CommonFunctionalities.csproj", "{BF46D7B1-C548-48AE-9988-2EF19317C633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShootingRange", "ShootingRange\ShootingRange.csproj", "{EC5E94AF-E5FF-4475-AB48-EB756D12EEC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BF46D7B1-C548-48AE-9988-2EF19317C633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF46D7B1-C548-48AE-9988-2EF19317C633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF46D7B1-C548-48AE-9988-2EF19317C633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5E94AF-E5FF-4475-AB48-EB756D12EEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5E94AF-E5FF-4475-AB48-EB756D12EEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5E94AF-E5FF-4475-AB48-EB756D12EEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5E94AF-E5FF-4475-AB48-EB756D12EEC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
