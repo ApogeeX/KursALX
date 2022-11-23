@@ -1,1 +1,3 @@
-﻿ShootingRange.Run();
+﻿using ShootingRange;
+
+ShootingRangeService.Run();

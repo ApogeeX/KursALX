@@ -3,7 +3,7 @@ using ShootingRange.Enums;
 
 namespace ShootingRange
 {
-    public class ShootingRange
+    public class ShootingRangeService
     {
         public static void Run()
         {

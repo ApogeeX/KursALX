@@ -1,6 +1,6 @@
 ﻿namespace ShootingRange.Interfaces
 {
-    internal interface IShootingRange
+    internal interface IShootingRangeService
     {
         double ShootingSingleCost(uint numberOfShots);
         double ShootingAutoCost(uint numberOfShots);

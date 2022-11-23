@@ -3,7 +3,7 @@ using ShootingRange.Interfaces;
 
 namespace ShootingRange.Class
 {
-    public class Firearms : IShootingRange
+    public class Firearms : IShootingRangeService
     {
         public double ShotCost;
         public uint ShotCount;
