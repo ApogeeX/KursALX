@@ -1,5 +1,4 @@
-﻿using Class;
-using Enums;
+﻿using ShootingRange;
 
 ShootingRange.Run();
 
