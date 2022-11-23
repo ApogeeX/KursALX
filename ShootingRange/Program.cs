@@ -1,3 +1,1 @@
-﻿using ShootingRange;
-
-ShootingRange.Run();
+﻿ShootingRange.Run();
