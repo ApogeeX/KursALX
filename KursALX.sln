@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlxCourseHomework", "AlxCou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonFunctionalities", "CommonFunctionalities\CommonFunctionalities.csproj", "{BF46D7B1-C548-48AE-9988-2EF19317C633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShootingRange", "ShootingRange\ShootingRange.csproj", "{EC5E94AF-E5FF-4475-AB48-EB756D12EEC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShootingRange", "ShootingRange\ShootingRange.csproj", "{EC5E94AF-E5FF-4475-AB48-EB756D12EEC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
