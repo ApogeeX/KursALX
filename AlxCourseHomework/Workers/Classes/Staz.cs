@@ -10,15 +10,5 @@ namespace AlxCourseHomework.Workers.Classes
             Name = name;
             Surname = surname;
         }
-        //public void ShowWorker()
-        //{
-        //    Console.WriteLine($"Worker name: {Name}");
-        //    Console.WriteLine($"Worek contract: {Contract}"); ;
-        //    Console.WriteLine($"Salary: {Math.Round(Salary, 2)}");
-        //}
-        //public double CalculatePay()
-        //{
-        //    return Pay = Math.Round(MonthlyRate, 2);
-        //}
     }
 }

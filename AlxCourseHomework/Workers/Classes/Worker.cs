@@ -1,5 +1,4 @@
-﻿
-using AlxCourseHomework.Workers.Classes.Enum;
+﻿using AlxCourseHomework.Workers.Classes.Enum;
 
 namespace AlxCourseHomework.Workers.Classes
 {
@@ -26,18 +25,9 @@ namespace AlxCourseHomework.Workers.Classes
                 Overtime = 0;
                 Console.WriteLine($"Contract changed to ETAT. Monthly rate set to {MonthlyRate} and overtime set to {Overtime}.");
             }
-            else
-            {   
-                MonthlyRate = 1000;
-            }
         }
 
-        public string Present()
-        {
-            return Name + " " + Surname + " Pay: " + Pay.ToString();
-        }
-
-        public double CalculatePay()
+      public double CalculatePay()
         {
             if (Contract == EnumContracts.ETAT)
             {
@@ -47,7 +37,11 @@ namespace AlxCourseHomework.Workers.Classes
             {
                 return Pay = Math.Round(MonthlyRate, 2);
             }
-            
+        }
+
+        public string Present()
+        {
+            return Name + " " + Surname + " Pay: " + Pay.ToString();
         }
     }
 }

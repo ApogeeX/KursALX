@@ -13,9 +13,5 @@ namespace AlxCourseHomework.Workers.Classes
             Surname = surname;
             Contract = EnumContracts.ETAT;
         }
-        //public double CalculatePay()
-        //{
-        //    return Pay = Math.Round(MonthlyRate + (Overtime * MonthlyRate / 60), 2);
-        //}
     }
 }
