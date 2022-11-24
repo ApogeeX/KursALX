@@ -2,9 +2,9 @@
 
 namespace AlxCourseHomework.Workers.Classes
 {
-    public class Staz : Worker , IContracts
+    public class Stazysta : Worker , IContracts
     {
-        public Staz(string name, string surname) : base()
+        public Stazysta(string name, string surname) : base()
         {
             MonthlyRate = 1000;
             Name = name;

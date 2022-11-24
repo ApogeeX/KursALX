@@ -13,23 +13,29 @@ namespace AlxCourseHomework.Workers.Classes
 
         public Worker()
         {
-            Contract = EnumContracts.STAŻ;
+            Contract = EnumContracts.STAŻYSTA;
         }
 
         public void ChangeContract()
         {
-            if (Contract == EnumContracts.STAŻ)
+            if (Contract == EnumContracts.STAŻYSTA)
             {
-                Contract = EnumContracts.ETAT;
+                Contract = EnumContracts.ETATOWY;
                 MonthlyRate = 5000;
                 Overtime = 0;
-                Console.WriteLine($"Contract changed to ETAT. Monthly rate set to {MonthlyRate} and overtime set to {Overtime}.");
+                Console.WriteLine($"Contract changed to ETATOWY. Monthly rate set to {MonthlyRate} and overtime set to {Overtime}.");
             }
+        }
+
+        public void ChangeOvertime(uint overtime)
+        {
+            Overtime = overtime;
+            Console.WriteLine("Overtime changed to: " + overtime);
         }
 
       public double CalculatePay()
         {
-            if (Contract == EnumContracts.ETAT)
+            if (Contract == EnumContracts.ETATOWY)
             {
                 return Pay = Math.Round(MonthlyRate + (Overtime * MonthlyRate / 60), 2);
             }
@@ -41,7 +47,7 @@ namespace AlxCourseHomework.Workers.Classes
 
         public string Present()
         {
-            return Name + " " + Surname + " Pay: " + Pay.ToString();
+            return Name + " " + Surname + ", Contract: " + Contract + ", Pay: " + Pay.ToString();
         }
     }
 }

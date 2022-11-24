@@ -2,7 +2,7 @@
 {
     public enum EnumContracts
     {
-        STAŻ,
-        ETAT
+        STAŻYSTA,
+        ETATOWY
     }
 }
