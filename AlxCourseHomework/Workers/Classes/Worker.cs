@@ -1,45 +1,53 @@
-﻿namespace AlxCourseHomework.Workers.Classes
+﻿
+using AlxCourseHomework.Workers.Classes.Enum;
+
+namespace AlxCourseHomework.Workers.Classes
 {
-    public class Worker
+    public abstract class Worker
     {
         public string Name;
         public string Surname;
-        public string Contract;
+        public EnumContracts Contract;
+        public double Pay;
+        public double MonthlyRate;
+        public uint Overtime;
 
-
-        Etat etat = new Etat();
-        Staz staz = new Staz();
-
-        public Worker(string name, string surname)
-        {
-            Name = name;
-            Surname = surname;
-            Contract = "Staż";
-        }
         public Worker()
         {
+            Contract = EnumContracts.STAŻ;
         }
 
-        public void ChangeContract(string contract)
+        public void ChangeContract()
         {
-            Contract = contract;
-        }
-
-        public double Pay()
-        {
-            if (Contract.ToLower() == "etat")
+            if (Contract == EnumContracts.STAŻ)
             {
-                return Math.Round(etat.CalculatePay(),2);
+                Contract = EnumContracts.ETAT;
+                Console.WriteLine("Contract changed to ETAT");
+                MonthlyRate = 5000;
+                Overtime = 0;
             }
             else
-            {
-                return Math.Round(staz.CalculatePay(),2);
+            {   
+                MonthlyRate = 1000;
             }
         }
 
         public string Present()
         {
-            return Name + " " + Surname + " Pay: " + Pay().ToString();
+            return Name + " " + Surname + " Pay: " + Pay.ToString();
+        }
+
+        public double CalculatePay()
+        {
+            if (Contract == EnumContracts.ETAT)
+            {
+                return Pay = Math.Round(MonthlyRate + (Overtime * MonthlyRate / 60), 2);
+            }
+            else
+            {
+                return Pay = Math.Round(MonthlyRate, 2);
+            }
+            
         }
     }
 }

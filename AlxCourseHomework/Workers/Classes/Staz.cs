@@ -1,14 +1,24 @@
-﻿namespace AlxCourseHomework.Workers.Classes
+﻿using AlxCourseHomework.Workers.Interfaces;
+
+namespace AlxCourseHomework.Workers.Classes
 {
-    public class Staz : Contracts
+    public class Staz : Worker , IContracts
     {
-        public Staz(string contractName = "Staz", double monthlyPay = 1000) : base(contractName, monthlyPay)
+        public Staz(string name, string surname) : base()
         {
+            MonthlyRate = 1000;
+            Name = name;
+            Surname = surname;
         }
-        public double CalculatePay()
-        {
-            return MonthlyPay;
-        }
+        //public void ShowWorker()
+        //{
+        //    Console.WriteLine($"Worker name: {Name}");
+        //    Console.WriteLine($"Worek contract: {Contract}"); ;
+        //    Console.WriteLine($"Salary: {Math.Round(Salary, 2)}");
+        //}
+        //public double CalculatePay()
+        //{
+        //    return Pay = Math.Round(MonthlyRate, 2);
+        //}
     }
 }
-

@@ -1,4 +1,5 @@
 ﻿using AlxCourseHomework;
+using AlxCourseHomework.Workers;
 
 int choiceInt = 1;
 while (choiceInt != 0)
@@ -112,7 +113,7 @@ while (choiceInt != 0)
             break;
         case 15:
             Console.Clear();
-            Page46.Run();
+            WorkerService.Run();
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
             break;

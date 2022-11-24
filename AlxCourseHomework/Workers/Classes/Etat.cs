@@ -1,18 +1,21 @@
-﻿namespace AlxCourseHomework.Workers.Classes
+﻿using AlxCourseHomework.Workers.Classes.Enum;
+using AlxCourseHomework.Workers.Interfaces;
+
+namespace AlxCourseHomework.Workers.Classes
 {
-    public class Etat : Contracts
+    public class Etat : Worker, IContracts
     {
-        public uint Overtime { get; set; }
-        
-        public Etat (string contractName = "Etat", double monthlyPay = 5000, uint overtime = 0) : base (contractName, monthlyPay)
+        public Etat(string name, string surname, uint overtime = 0) : base()
         {
+            MonthlyRate = 5000;
             Overtime = overtime;
+            Name = name;
+            Surname = surname;
+            Contract = EnumContracts.ETAT;
         }
-
-        public double CalculatePay()
-        {
-            return MonthlyPay + (Overtime * MonthlyPay / 60);
-        }
-
-     }
+        //public double CalculatePay()
+        //{
+        //    return Pay = Math.Round(MonthlyRate + (Overtime * MonthlyRate / 60), 2);
+        //}
+    }
 }
