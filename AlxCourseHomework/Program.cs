@@ -1,11 +1,9 @@
 ﻿using AlxCourseHomework;
-using AlxCourseHomework.MaterialsAssignments;
 
 int choiceInt = 1;
 while (choiceInt != 0)
 {
     Console.Clear();
-    Console.WriteLine("Please choose assigment to test: ");
     Console.WriteLine("1 - Personal Data");
     Console.WriteLine("2 - Today");
     Console.WriteLine("3 - If Conditional");
@@ -20,7 +18,9 @@ while (choiceInt != 0)
     Console.WriteLine("12 - Months in List");
     Console.WriteLine("13 - Cars");
     Console.WriteLine("14 - Guest");
+    Console.WriteLine("15 - Workers");
     Console.WriteLine("0 - End program");
+    Console.Write("Please choose assigment to test: ");
 
     var choiceString = Console.ReadLine();
     
@@ -107,6 +107,12 @@ while (choiceInt != 0)
             break;
         case 14:
             Page45.Guest();
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey();
+            break;
+        case 15:
+            Console.Clear();
+            Page46.Run();
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
             break;
