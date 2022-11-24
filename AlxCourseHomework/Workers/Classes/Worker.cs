@@ -22,9 +22,9 @@ namespace AlxCourseHomework.Workers.Classes
             if (Contract == EnumContracts.STAŻ)
             {
                 Contract = EnumContracts.ETAT;
-                Console.WriteLine("Contract changed to ETAT");
                 MonthlyRate = 5000;
                 Overtime = 0;
+                Console.WriteLine($"Contract changed to ETAT. Monthly rate set to {MonthlyRate} and overtime set to {Overtime}.");
             }
             else
             {   

@@ -18,6 +18,7 @@ namespace AlxCourseHomework.Workers
             Console.WriteLine();
             worker2.ChangeContract();
             worker2.Overtime = 5;
+            Console.WriteLine($"Overtime set to {worker2.Overtime}.");
             worker2.CalculatePay();
             Console.WriteLine(worker2.Present());
         }
