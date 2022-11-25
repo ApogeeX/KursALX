@@ -15,164 +15,185 @@ namespace ShootingRange
             {
                 case EnumFirearms.AK47:
                     AK47 ak47 = new AK47();
-                    Console.WriteLine("Adding " + ak47.FirearmType.ToString() + " to the list.");
                     if (ak47.HasAuto == true)
                     {
                         Console.Write("Single shot or auto shot (S/A): ");
-                        char SingleOrAuto = Console.ReadKey().KeyChar;
+                        char singleOrAuto = Console.ReadKey().KeyChar;
                         Console.WriteLine();
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
                         Console.WriteLine();
-                        if (SingleOrAuto.ToString().ToLower() == "a")
+                        if (singleOrAuto.ToString().ToLower() == "a")
                         {
+                            Console.WriteLine($"Added {ak47.FirearmType.ToString()} in auto shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(ak47.FirearmType.ToString() + " in auto shot.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(ak47.AutoShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(ak47.AutoShotCost(numberOfShots), 2));
+                            break;
                         }
                         else
                         {
+                            Console.WriteLine($"Added {ak47.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(ak47.FirearmType.ToString() + " in single shot mode.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(ak47.SingleShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(ak47.SingleShotCost(numberOfShots), 2));
                         }
                     }
                     else
                     {
                         Console.WriteLine("This firearm has only single shot mode.");
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine();
+                        Console.WriteLine($"Added {ak47.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                         UsedFirearms.Add(ak47.FirearmType.ToString() + " in single shot mode.");
-                        ShotsPerFirearm.Add(NumberOfShots);
-                        PricePerShot.Add(Math.Round(ak47.SingleShotCost(NumberOfShots), 2));
+                        ShotsPerFirearm.Add(numberOfShots);
+                        PricePerShot.Add(Math.Round(ak47.SingleShotCost(numberOfShots), 2));
                     }
                     break;
                 case EnumFirearms.BERETTA:
                     Beretta beretta = new Beretta();
-                    Console.WriteLine("Adding " + beretta.FirearmType.ToString() + " to the list.");
                     if (beretta.HasAuto == true)
                     {
                         Console.Write("Single shot or auto shot (S/A): ");
-                        char SingleOrAuto = Console.ReadKey().KeyChar;
+                        char singleOrAuto = Console.ReadKey().KeyChar;
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
-                        if (SingleOrAuto.ToString().ToLower() == "a")
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine();
+                        if (singleOrAuto.ToString().ToLower() == "a")
                         {
+                            Console.WriteLine($"Added {beretta.FirearmType.ToString()} in auto shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(beretta.FirearmType.ToString() + " in auto shot.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(beretta.AutoShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(beretta.AutoShotCost(numberOfShots), 2));
                         }
                         else
                         {
+                            Console.WriteLine($"Added {beretta.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(beretta.FirearmType.ToString() + " in single shot mode.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(beretta.SingleShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(beretta.SingleShotCost(numberOfShots), 2));
                         }
                     }
                     else
                     {
                         Console.WriteLine("This firearm has only single shot mode.");
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine();
+                        Console.WriteLine($"Added {beretta.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                         UsedFirearms.Add(beretta.FirearmType.ToString() + " in single shot mode.");
-                        ShotsPerFirearm.Add(NumberOfShots);
-                        PricePerShot.Add(Math.Round(beretta.SingleShotCost(NumberOfShots), 2));
+                        ShotsPerFirearm.Add(numberOfShots);
+                        PricePerShot.Add(Math.Round(beretta.SingleShotCost(numberOfShots), 2));
                     }
                     break;
                 case EnumFirearms.UZI:
                     UZI uzi = new UZI();
-                    Console.WriteLine("Adding " + uzi.FirearmType.ToString() + " to the list.");
                     if (uzi.HasAuto == true)
                     {
                         Console.Write("Single shot or auto shot (S/A): ");
-                        char SingleOrAuto = Console.ReadKey().KeyChar;
+                        char singleOrAuto = Console.ReadKey().KeyChar;
+                        Console.WriteLine();
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
-                        if (SingleOrAuto.ToString().ToLower() == "a")
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine();
+                        if (singleOrAuto.ToString().ToLower() == "a")
                         {
+                            Console.WriteLine($"Added {uzi.FirearmType.ToString()} in auto shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(uzi.FirearmType.ToString() + " in auto shot.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(uzi.AutoShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(uzi.AutoShotCost(numberOfShots), 2));
                         }
                         else
                         {
+                            Console.WriteLine($"Added {uzi.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(uzi.FirearmType.ToString() + " in single shot mode.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(uzi.SingleShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(uzi.SingleShotCost(numberOfShots), 2));
                         }
                     }
                     else
                     {
                         Console.WriteLine("This firearm has only single shot mode.");
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine();
+                        Console.WriteLine($"Added {uzi.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                         UsedFirearms.Add(uzi.FirearmType.ToString() + " in single shot mode.");
-                        ShotsPerFirearm.Add(NumberOfShots);
-                        PricePerShot.Add(Math.Round(uzi.SingleShotCost(NumberOfShots), 2));
+                        ShotsPerFirearm.Add(numberOfShots);
+                        PricePerShot.Add(Math.Round(uzi.SingleShotCost(numberOfShots), 2));
                     }
                     break;
                 case EnumFirearms.M4:
                     M4 m4 = new M4();
-                    Console.WriteLine("Adding " + m4.FirearmType.ToString() + " to the list.");
                     if (m4.HasAuto == true)
                     {
                         Console.Write("Single shot or auto shot (S/A): ");
-                        char SingleOrAuto = Console.ReadKey().KeyChar;
+                        char singleOrAuto = Console.ReadKey().KeyChar;
+                        Console.WriteLine();
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
-                        if (SingleOrAuto.ToString().ToLower() == "a")
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        if (singleOrAuto.ToString().ToLower() == "a")
                         {
+                            Console.WriteLine($"Added {m4.FirearmType.ToString()} in auto shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(m4.FirearmType.ToString() + " in auto shot.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(m4.AutoShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(m4.AutoShotCost(numberOfShots), 2));
                         }
                         else
                         {
+                            Console.WriteLine($"Added {m4.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(m4.FirearmType.ToString() + " in single shot mode.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(m4.SingleShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(m4.SingleShotCost(numberOfShots), 2));
                         }
                     }
                     else
                     {
                         Console.WriteLine("This firearm has only single shot mode.");
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine();
+                        Console.WriteLine($"Added {m4.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                         UsedFirearms.Add(m4.FirearmType.ToString() + " in auto shot.");
-                        ShotsPerFirearm.Add(NumberOfShots);
-                        PricePerShot.Add(Math.Round(m4.AutoShotCost(NumberOfShots), 2));
+                        ShotsPerFirearm.Add(numberOfShots);
+                        PricePerShot.Add(Math.Round(m4.AutoShotCost(numberOfShots), 2));
                     }
                     break;
                 case EnumFirearms.SCORPION:
                     Scorpion scorpion = new Scorpion();
-                    Console.WriteLine("Adding " + scorpion.FirearmType.ToString() + " to the list.");
                     if (scorpion.HasAuto == true)
                     {
                         Console.Write("Single shot or auto shot (S/A): ");
-                        char SingleOrAuto = Console.ReadKey().KeyChar;
+                        char singleOrAuto = Console.ReadKey().KeyChar;
+                        Console.WriteLine();
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
-                        if (SingleOrAuto.ToString().ToLower() == "a")
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        if (singleOrAuto.ToString().ToLower() == "a")
                         {
+                            Console.WriteLine($"Added {scorpion.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(scorpion.FirearmType.ToString() + " in auto shot.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(scorpion.AutoShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(scorpion.AutoShotCost(numberOfShots), 2));
                         }
                         else
                         {
+                            Console.WriteLine($"Added {scorpion.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                             UsedFirearms.Add(scorpion.FirearmType.ToString() + " in single shot mode.");
-                            ShotsPerFirearm.Add(NumberOfShots);
-                            PricePerShot.Add(Math.Round(scorpion.SingleShotCost(NumberOfShots), 2));
+                            ShotsPerFirearm.Add(numberOfShots);
+                            PricePerShot.Add(Math.Round(scorpion.SingleShotCost(numberOfShots), 2));
                         }
                     }
                     else
                     {
                         Console.WriteLine("This firearm has only single shot mode.");
                         Console.Write("Enter number of shots: ");
-                        uint NumberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine();
+                        uint numberOfShots = uint.Parse(Console.ReadLine());
+                        Console.WriteLine($"Added {scorpion.FirearmType.ToString()} in single shot mode with {numberOfShots} shots.");
                         UsedFirearms.Add(scorpion.FirearmType.ToString() + " in single shot mode.");
-                        ShotsPerFirearm.Add(NumberOfShots);
-                        PricePerShot.Add(Math.Round(scorpion.SingleShotCost(NumberOfShots), 2));
+                        ShotsPerFirearm.Add(numberOfShots);
+                        PricePerShot.Add(Math.Round(scorpion.SingleShotCost(numberOfShots), 2));
                     }
                     break;
             }

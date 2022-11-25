@@ -17,8 +17,18 @@ namespace ShootingRange
             Console.WriteLine();
             while (addNewGun.ToString().ToLower() == "y")
             {
-                Console.Write("Enter chosen firearm: ");
-                EnumFirearms chosenFirearm = (EnumFirearms)Enum.Parse(typeof(EnumFirearms), Console.ReadLine().ToUpper());
+                Console.Write("Enter firearm to add to the list: ");
+                EnumFirearms chosenFirearm;
+                try
+                {
+                    chosenFirearm = (EnumFirearms)Enum.Parse(typeof(EnumFirearms), Console.ReadLine().ToUpper());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Wrong firearm, try again...");
+                    Console.WriteLine("Closing app.");
+                    break;
+                }
                 Console.WriteLine();
                 if (Enum.IsDefined(typeof(EnumFirearms), chosenFirearm))
                 {
@@ -29,7 +39,7 @@ namespace ShootingRange
                 }
                 else
                 {
-                    Console.WriteLine("Wrong fireamr, try again...");
+                    Console.WriteLine("Not firearm, try again");
                 }
 
                 if (addNewGun.ToString().ToLower() == "n")
@@ -39,7 +49,7 @@ namespace ShootingRange
                 }
                 else
                 {
-                   // Console.Write("Thank You for your visit.");
+                    Console.Write("Thank You for your visit.");
                 }
             }
         }
