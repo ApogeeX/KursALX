@@ -39,16 +39,12 @@ namespace ShootingRange
                 }
                 else
                 {
-                    Console.WriteLine("Not firearm, try again");
+                    Console.WriteLine("Not firearm, try again.");
                 }
 
                 if (addNewGun.ToString().ToLower() == "n")
                 {
                     shootingList.PresentList();
-                    Console.Write("Thank You for your visit.");
-                }
-                else
-                {
                     Console.Write("Thank You for your visit.");
                 }
             }
