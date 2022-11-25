@@ -3,25 +3,24 @@ using ShootingRange.Interfaces;
 
 namespace ShootingRange.Class
 {
-    public class Firearms : IShootingRangeService
+    public class Firearms
     {
         public double ShotCost;
-        public uint ShotCount;
+        public uint ShotCount = 1;
         public EnumFirearms FirearmType;
+        public bool HasAuto = true;
 
-        public Firearms (EnumFirearms firearmType)
+        public Firearms ()
         {
-            FirearmType = firearmType;
-            ShotCost = 1;
         }
 
-        public double ShootingSingleCost(uint numberOfShots)
+        public double SingleShotCost(uint numberOfShots)
         {
             ShotCount = numberOfShots;
             return ShotCost * numberOfShots;
         }
 
-        public double ShootingAutoCost(uint numberOfShots)
+        public double AutoShotCost(uint numberOfShots)
         {
             return ShotCost * numberOfShots * 1.15;
         }

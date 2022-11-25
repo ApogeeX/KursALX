@@ -13,5 +13,17 @@ namespace AlxCourseHomework.Workers.Classes
             Surname = surname;
             Contract = EnumContracts.ETATOWY;
         }
+
+        public double CalculatePay()
+        {
+            if (Contract == EnumContracts.ETATOWY)
+            {
+                return Pay = Math.Round(MonthlyRate + (Overtime * MonthlyRate / 60), 2);
+            }
+            else
+            {
+                return Pay = Math.Round(MonthlyRate, 2);
+            }
+        }
     }
 }

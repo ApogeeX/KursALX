@@ -4,8 +4,10 @@ namespace ShootingRange.Class
 {
     public class AK47 : Firearms
     {
-        public AK47() : base(EnumFirearms.AK47)
+        public AK47() : base()
         {
+            FirearmType = EnumFirearms.AK47;
+            ShotCost = 0.33;
         }
     }
 }

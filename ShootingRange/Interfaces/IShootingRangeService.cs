@@ -2,7 +2,7 @@
 {
     internal interface IShootingRangeService
     {
-        double ShootingSingleCost(uint numberOfShots);
-        double ShootingAutoCost(uint numberOfShots);
+        double SingleShotCost(uint numberOfShots);
+        double AutoShotCost(uint numberOfShots);
     }
 }

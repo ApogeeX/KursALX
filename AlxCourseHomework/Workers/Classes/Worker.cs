@@ -33,18 +33,6 @@ namespace AlxCourseHomework.Workers.Classes
             Console.WriteLine("Overtime changed to: " + overtime);
         }
 
-      public double CalculatePay()
-        {
-            if (Contract == EnumContracts.ETATOWY)
-            {
-                return Pay = Math.Round(MonthlyRate + (Overtime * MonthlyRate / 60), 2);
-            }
-            else
-            {
-                return Pay = Math.Round(MonthlyRate, 2);
-            }
-        }
-
         public string Present()
         {
             return Name + " " + Surname + ", Contract: " + Contract + ", Pay: " + Pay.ToString();

@@ -4,8 +4,10 @@ namespace ShootingRange.Class
 {
     public class M4 : Firearms
     {
-        public M4() : base(EnumFirearms.M4)
+        public M4() : base()
         {
+            FirearmType = EnumFirearms.M4;
+            ShotCost = 0.28;
         }
     }
 }

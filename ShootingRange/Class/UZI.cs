@@ -4,8 +4,10 @@ namespace ShootingRange.Class
 {
     public class UZI : Firearms
     {
-        public UZI() : base(EnumFirearms.UZI)
+        public UZI() : base()
         {
+            FirearmType = EnumFirearms.UZI;
+            ShotCost = 0.30;
         }
     }
 }

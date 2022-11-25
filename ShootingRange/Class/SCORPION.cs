@@ -2,10 +2,12 @@
 
 namespace ShootingRange.Class
 {
-    public class SCORPION : Firearms
+    public class Scorpion : Firearms
     {
-        public SCORPION() : base(EnumFirearms.SCORPION)
+        public Scorpion() : base()
         {
+            FirearmType = EnumFirearms.SCORPION;
+            ShotCost = 0.55;
         }
     }
 }
