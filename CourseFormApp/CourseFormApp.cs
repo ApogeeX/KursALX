@@ -42,7 +42,7 @@ namespace CourseFormApp
                var result = PerformOpertaion(Convert.ToDouble(XNumberTextBox.Text),
                                             Convert.ToDouble(YNumberTextBox.Text));
                 ResultTextBox.Text = result.ToString();
-                LogTextBox.Text += "Operation performed successfully!" + "\n";
+                LogTextBox.Text = "Operation performed successfully!";
             }
             catch (Exception ex)
             {
