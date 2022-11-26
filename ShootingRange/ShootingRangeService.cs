@@ -1,5 +1,4 @@
 ﻿using ShootingRange.Enums;
-using System.ComponentModel;
 
 namespace ShootingRange
 {
