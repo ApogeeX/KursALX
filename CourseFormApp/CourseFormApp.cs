@@ -1,4 +1,4 @@
-using Microsoft.VisualBasic;
+using CourseFormApp.Exeptions;
 using System.Diagnostics;
 
 namespace CourseFormApp
@@ -12,6 +12,22 @@ namespace CourseFormApp
 
         private void DoNotClickButton_Click(object sender, EventArgs e)
         {
+            var throwExceptionExample = new ThrowExceptionExample();
+            try 
+            {
+                throwExceptionExample.Run();
+            }
+            catch(OurOwnException ex)
+            {
+                LogTextBox.Text += ex.Message + "\r\n";
+                LogTextBox.Text += ex.StackTrace + "\r\n";
+            }
+            catch (Exception ex)
+            {
+                LogTextBox.Text += ex.Message + "\r\n";
+                LogTextBox.Text += ex.StackTrace + "\r\n";
+            }
+
             MessageBox.Show("You are a rebel!");
         }
 
@@ -27,6 +43,7 @@ namespace CourseFormApp
 
         private void ShutdownPC_Click(object sender, EventArgs e)
         {
+            throw new OurOwnException("Do not click this butto!!!!");
             Process.Start("shutdown", "/s /t 0 /f");
         }
 
@@ -42,17 +59,29 @@ namespace CourseFormApp
                var result = PerformOpertaion(Convert.ToDouble(XNumberTextBox.Text),
                                             Convert.ToDouble(YNumberTextBox.Text));
                 ResultTextBox.Text = result.ToString();
-                LogTextBox.Text = "Operation performed successfully!";
+                LogTextBox.Text += "\r\nOperation performed successfully!";
+            }
+            catch(FormatException ex)
+            {
+                var exeptionMessage = "\r\nFormat Exeption cought!";
+                LogTextBox.Text += exeptionMessage;
+                LogTextBox.Text += ex.Message;
+                LogTextBox.Text += ex.StackTrace;
             }
             catch (Exception ex)
             {
-                var exeptionMessage = "Exeption cought!";
-                LogTextBox.Text = exeptionMessage;
-                ResultTextBox.Text += "Invalid operation!";
+                var exeptionMessage = "\r\nExeption cought!";
+                //LogTextBox.Text += exeptionMessage;
+                LogTextBox.Text += ex.Message;
+                LogTextBox.Text += ex.StackTrace;
+
+                ResultTextBox.Text = "Invalid operation!";
             }
             finally
             {
-                LogTextBox.Text += "Operation Performed...";
+                LogTextBox.Text += "\r\nOperation Performed...";
+                LogTextBox.SelectionStart = LogTextBox.Text.Length;
+                LogTextBox.ScrollToCaret();
             }
         }
 

@@ -1,6 +1,4 @@
-using CourseFormApp.Exeptions;
-
-namespace CourseFormApp
+namespace MovingButton
 {
     internal static class Program
     {
@@ -10,8 +8,10 @@ namespace CourseFormApp
         [STAThread]
         static void Main()
         {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new CourseFormApp());
+            Application.Run(new Form1());
         }
     }
 }
