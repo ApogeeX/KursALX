@@ -89,7 +89,7 @@
             // 
             // HeightTextBox1
             // 
-            this.HeightTextBox1.Location = new System.Drawing.Point(499, 66);
+            this.HeightTextBox1.Location = new System.Drawing.Point(655, 30);
             this.HeightTextBox1.Name = "HeightTextBox1";
             this.HeightTextBox1.Size = new System.Drawing.Size(72, 23);
             this.HeightTextBox1.TabIndex = 4;
@@ -97,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(391, 69);
+            this.label1.Location = new System.Drawing.Point(547, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 15);
             this.label1.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             // HeigtButton
             // 
-            this.HeigtButton.Location = new System.Drawing.Point(533, 95);
+            this.HeigtButton.Location = new System.Drawing.Point(689, 59);
             this.HeigtButton.Name = "HeigtButton";
             this.HeigtButton.Size = new System.Drawing.Size(75, 23);
             this.HeigtButton.TabIndex = 6;
@@ -116,7 +116,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(581, 71);
+            this.label2.Location = new System.Drawing.Point(737, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 15);
             this.label2.TabIndex = 7;
@@ -158,7 +158,7 @@
             // 
             this.calculateButton.Location = new System.Drawing.Point(12, 317);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.Size = new System.Drawing.Size(100, 23);
             this.calculateButton.TabIndex = 13;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
@@ -229,18 +229,18 @@
             // 
             // LogTextBox
             // 
-            this.LogTextBox.Location = new System.Drawing.Point(118, 217);
+            this.LogTextBox.Location = new System.Drawing.Point(118, 229);
             this.LogTextBox.Multiline = true;
             this.LogTextBox.Name = "LogTextBox";
             this.LogTextBox.ReadOnly = true;
             this.LogTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.LogTextBox.Size = new System.Drawing.Size(266, 152);
+            this.LogTextBox.Size = new System.Drawing.Size(387, 140);
             this.LogTextBox.TabIndex = 20;
             // 
             // logs
             // 
             this.logs.AutoSize = true;
-            this.logs.Location = new System.Drawing.Point(118, 199);
+            this.logs.Location = new System.Drawing.Point(118, 206);
             this.logs.Name = "logs";
             this.logs.Size = new System.Drawing.Size(35, 15);
             this.logs.TabIndex = 21;
