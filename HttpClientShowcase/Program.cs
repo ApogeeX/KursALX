@@ -18,11 +18,11 @@ var httpClientDemo = new HttpClientDemo(client);
 //await httpClientDemo.GetRandomDogImage();
 //await httpClientDemo.PredictGender("Me");
 
-var email = new Email
-{
-    To = "emil.palczynski@gmail.com",
-    Subject = "App test2",
-    Message = "Alx course test2"
-};
+//var email = new Email
+//{
+//    To = "emil.palczynski@gmail.com",
+//    Subject = "App test2",
+//    Message = "Alx course test2"
+//};
 
-await httpClientDemo.SendEmail(email);
+//await httpClientDemo.SendEmail(email);

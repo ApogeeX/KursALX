@@ -73,7 +73,7 @@ namespace HttpClientShowcase
             var requestContent = new StringContent(emailJson);
             var requestMessage = new HttpRequestMessage(HttpMethod.Post, baseRequestUri);
             requestMessage.Content = requestContent;
-            requestMessage.Headers.Add("x-functions-key", "ZLMFUw4TvZNw4-xKtpPBQBCSusCMkeNIoZxwJGNHU_o8AzFuKEYALQ==");
+            requestMessage.Headers.Add("x-functions-key", "<api key>");
             var result = await _httpClient.SendAsync(requestMessage);
             var resultContent = await result.Content.ReadAsStringAsync();
             Console.WriteLine(resultContent);
