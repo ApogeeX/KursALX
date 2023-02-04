@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using HttpClientShowcase;
+
 Console.WriteLine("Hello, World!");
+var serializationDemo = new SerializationDemo();
+serializationDemo.Run();
