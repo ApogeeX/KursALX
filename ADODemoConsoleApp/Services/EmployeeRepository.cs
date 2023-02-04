@@ -1,7 +1,6 @@
 ﻿using ADODemoConsoleApp.Models;
 using System.Data.SqlClient;
 
-
 namespace ADODemoConsoleApp.Services
 {
     public class EmployeeRepository
