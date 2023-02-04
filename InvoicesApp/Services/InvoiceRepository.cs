@@ -37,11 +37,7 @@ namespace InvoicesApp.Services
                     Console.Write(ex.Message);
                     Console.Write(ex.StackTrace);
                 }
-
             }
         }
-
-    }
-
-    
+    }    
 }
