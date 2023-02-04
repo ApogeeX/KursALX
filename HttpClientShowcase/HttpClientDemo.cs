@@ -56,12 +56,27 @@ namespace HttpClientShowcase
 
         public async Task PredictGender(string name)
         {
-            throw new NotImplementedException();
+            var baseRequestUri = "https://api.genderize.io";
+            var uriBuilder = new UriBuilder(baseRequestUri);
+            uriBuilder.Query = $"name={name}";
+            var uri = uriBuilder.Uri;
+            var response = await _httpClient.GetAsync(uri);
+            var responseContentJson = await response.Content.ReadAsStringAsync();
+            var predictGenderResponse = JsonConvert.DeserializeObject<PredictGenderResponse>(responseContentJson);
+            Console.WriteLine($"Name: {predictGenderResponse.Name}\nGender: {predictGenderResponse.Gender}\nPropability: {predictGenderResponse.Probability * 100}%");
         }
 
         public async Task SendEmail(Email email)
         {
-            throw new NotImplementedException();
+            var baseRequestUri = "https://cnemailingservice20230203214349.azurewebsites.net/api/CNEMailingFunction";
+            var emailJson = JsonConvert.SerializeObject(email);
+            var requestContent = new StringContent(emailJson);
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, baseRequestUri);
+            requestMessage.Content = requestContent;
+            requestMessage.Headers.Add("x-functions-key", "ZLMFUw4TvZNw4-xKtpPBQBCSusCMkeNIoZxwJGNHU_o8AzFuKEYALQ==");
+            var result = await _httpClient.SendAsync(requestMessage);
+            var resultContent = await result.Content.ReadAsStringAsync();
+            Console.WriteLine(resultContent);
         }
 
         public async Task<string> Hello(string name)
