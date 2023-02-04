@@ -1,10 +1,9 @@
 ﻿namespace HttpClientShowcase.Models
 {
-    public class BookJsonSamplesHelper
+    public class BookJsonSamplesHolder
     {
-        public string? BookJson { get; set; }
-        public string? BookBoxJson { get; set;}
-
-        public string? BookShelfJson { get;}
+        public string BookJson { get; set; }
+        public string BookBoxJson { get; set;}
+        public string BookShelfJson { get; set; }
     }
 }

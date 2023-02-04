@@ -5,7 +5,7 @@ namespace HttpClientShowcase
 {
     public class SerializationDemo
     {
-        public void Run()
+        public BookJsonSamplesHolder RunSerialization()
         {
             var book = new Book
             {
@@ -47,6 +47,21 @@ namespace HttpClientShowcase
 
             var bookShelfJson = JsonConvert.SerializeObject(bookShelf);
             Console.WriteLine(bookShelfJson);
+
+            return new BookJsonSamplesHolder
+            {
+                BookJson = bookJson,
+                BookBoxJson = bookBoxJson,
+                BookShelfJson = bookShelfJson
+            };
+        }
+
+        public void RunDeserialization(BookJsonSamplesHolder jsonStrings)
+        {
+            var book = JsonConvert.DeserializeObject<Book>(jsonStrings.BookJson);
+            var bookBox = JsonConvert.DeserializeObject<BookBox>(jsonStrings.BookBoxJson);
+            var bookShelf = JsonConvert.DeserializeObject<BookShelf>(jsonStrings.BookShelfJson);
+//          var book1 = JsonConvert.DeserializeObject<Book>(jsonStrings.BookShelfJson);
         }
     }
 }
