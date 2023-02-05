@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApi.Models;
-using WebApi.Services;
 using WebApi.Services.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,44 +13,35 @@ namespace WebApi.Controllers
         private IEmployeeService _employeeService;
 
         public EmployeeController(IEmployeeService service)
-        { 
+        {
             _employeeService = service;
         }
-        // GET: api/<ValuesController>
+
+        // GET: api/<ValuesController1>
         [HttpGet]
-        public async Task <IEnumerable<Employee>> GetAll()
+        public async Task<List<Employee>> GetAll()
         {
-            return new List<Employee>() { new Employee
-            {
-                Id = Guid.NewGuid(),
-                FirstName = "Test",
-                LastName = "TestLastName",
-                DepartmentId = Guid.NewGuid(),
-                PaycheckId = Guid.NewGuid(),
-                Email = "test@paparam.com"
-            } };
+            return await _employeeService.GetAll();
         }
 
         // GET api/<ValuesController1>/5
         [HttpGet("{id}")]
-        public async Task<Employee> Get(int id)
+        public async Task<Employee> Get(Guid id)
         {
-            return new Employee
-            {
-                Id = Guid.NewGuid(),
-                FirstName = "Test",
-                LastName = "TestLastName",
-                DepartmentId = Guid.NewGuid(),
-                PaycheckId = Guid.NewGuid(),
-                Email = "test@paparam.com"
-            };
+            return await _employeeService.GetEmployee(id);
         }
 
-        // POST api/<ValuesController>
+        // POST api/<ValuesController1>
         [HttpPost]
         public async Task Post([FromQuery] EmployeeDTO employee)
         {
-           await _employeeService.AddEmployee(employee);
+            await _employeeService.AddEmployee(employee);
+        }
+
+        [HttpPut]
+        public async Task Put([FromQuery] PaymentAssessment assessment)
+        {
+            await _employeeService.AssessPayment(assessment);
         }
     }
 }
