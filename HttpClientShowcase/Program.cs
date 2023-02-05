@@ -1,7 +1,7 @@
 ﻿using HttpClientShowcase;
 using HttpClientShowcase.Models;
 
-Console.WriteLine("Http Client Demo...");
+Console.WriteLine("Http Client App...");
 Console.WriteLine();
 var serializationDemo = new SerializationDemo();
 //var jsonStrings = serializationDemo.RunSerialization();
@@ -9,6 +9,7 @@ var serializationDemo = new SerializationDemo();
 
 var client = new HttpClient();
 var httpClientDemo = new HttpClientDemo(client);
+var httpClientApp = new HttpClientApp(client);
 //var hello = await httpClientDemo.Hello("Emil");
 //Console.WriteLine(hello);
 //await httpClientDemo.GetRandomJoke();
@@ -17,6 +18,12 @@ var httpClientDemo = new HttpClientDemo(client);
 //Console.WriteLine();
 //await httpClientDemo.GetRandomDogImage();
 //await httpClientDemo.PredictGender("Me");
+await httpClientApp.BoredApi();
+Console.WriteLine();
+await httpClientApp.Herokuapp();
+Console.WriteLine();
+await httpClientApp.Coindesk();
+
 
 //var email = new Email
 //{

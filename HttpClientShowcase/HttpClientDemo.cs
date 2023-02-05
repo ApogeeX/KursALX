@@ -94,5 +94,14 @@ namespace HttpClientShowcase
                     bitmap.Save($"{OutputFolderPath}\\{fileName}.png", ImageFormat.Png);
             }
         }
+
+        public async Task BoredApi()
+        {
+            var requestUri = "https://www.boredapi.com/api/activity";
+            var response = await _httpClient.GetAsync(requestUri);
+            var responseContentJson = await response.Content.ReadAsStringAsync();
+            var boredapi = JsonConvert.DeserializeObject<BoredApiResponse>(responseContentJson);
+            Console.WriteLine($"Boredapi for today:\nActivity: {boredapi.Activity}\nType: {boredapi.Type}\nParticipants: {boredapi.Participants}\nPrice: {boredapi.Price}\nLink: {boredapi.Link}\nKey: {boredapi.Key}\nAccessibility: {boredapi.Accessibility}");
+        }
     }
 }
